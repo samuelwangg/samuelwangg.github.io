@@ -1,0 +1,12 @@
+name = "qnd"
+license = "MIT"
+licenselink = "https://github.com/andyytea/qnd/blob/master/LICENSE"
+description = "quick and dirty Hugo theme for blogging"
+homepage = "https://github.com/andyytea/"
+tags = ["simple", "minimal", "clean", "fast", "blog", "responsive", "privacy"]
+features = ["fast", "blog", "syntax highlighting"]
+min_version = "0.1"
+
+[author]
+  name = "Andy Tsang"
+  homepage = "https://github.com/andyytea"

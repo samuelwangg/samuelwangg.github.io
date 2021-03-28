@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ .Content }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>This is my Blog! ✌️</h1>
+    </header>
+    <section class="entry-content">
+        <p>Welcome to my blog</p>
+    </section>
+{{- partial "social_icons.html" $.Site.Params.socialIcons -}}
+</article>
+<h3>Latest Post</h3>
+<ul id="posts">
+{{- range first 1 site.RegularPages}}
+    <li>
+        <a href="{{ .Permalink }}">
+            {{ .Title }}
+        </a>
+        <small><time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
+        <div class="summary">{{ .Summary }}...</div>
+    </li>
+{{- end }}
+</ul>
+{{ end }}

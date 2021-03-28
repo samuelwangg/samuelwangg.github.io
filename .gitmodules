@@ -1,0 +1,3 @@
+[submodule "qnd"]
+	path = themes/qnd
+	url = https://github.com/andyytea/qnd.git
